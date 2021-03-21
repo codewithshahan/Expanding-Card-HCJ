@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -11,6 +12,20 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+h2 {
+  position: absolute;
+  top: 5px;
+  font-size: 1.2rem;
+  color: #bb02cc;
+}
+
+p {
+  position: absolute;
+  bottom: 10px;
+  opacity: 0.5;
+  font-weight: 600;
 }
 
 .container {
@@ -28,7 +43,7 @@ body {
   position: relative;
   cursor: pointer;
   flex: 0.5;
-  transition: flex 0.5s;
+  transition: flex 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .panel h3 {
@@ -46,8 +61,7 @@ body {
 
 .panel.active h3 {
   opacity: 1;
-  transform: translateX(10px);
-  transition-duration: 0.5s;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media screen and (max-width: 480px) {
