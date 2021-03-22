@@ -14,20 +14,6 @@ body {
   height: 100vh;
 }
 
-h2 {
-  position: absolute;
-  top: 5px;
-  font-size: 1.2rem;
-  color: #bb02cc;
-}
-
-p {
-  position: absolute;
-  bottom: 10px;
-  opacity: 0.5;
-  font-weight: 600;
-}
-
 .container {
   display: flex;
   width: 90vw;
